@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/* Layout */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* navigation */
+nav{
+    width:150%;
+    background:  rgb(22, 50, 91);
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    height:13%;
+    padding: 1%;
+    font-size: 90%;
+    padding-right: 0;
+    border-bottom: solid 1px #ffffff1a; 
+    
+    
+}
+nav li:first-child{
+    margin-left:0;
+    margin-right: -50px;
+} 
+.Zaioimg{
+    height:4%;
+    width:6%;
+    float:left;
+    padding: 4px 2px;
+    padding-left: 5%;
+    padding-right: 4%;
+}
+.title{
+    -webkit-font-smoothing: antialiased;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+   
+}
+
+li{
+    float: left;
+}
+
+a{
+    padding: 20px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav-bar .buttons{
+    width: 115px;
+    height: 18px;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 10px 0 25px 0;
+}
+
+.sect3 .buttons{
+    width: 30%;
+    height: 20px;
+    border-radius: 10px;
+}
+.buttons{
+    border-radius: 7px;
+    background-color: rgb(255, 122, 0);
+    padding: 15px 15px;
+    color: white; 
+    margin: none;
+    border: none;
+    font-size: 100%;
+    display: inline-block; 
+    cursor: pointer; 
+}
+
+
+/* page1 */
+.sect1 h2{
+    color: white;
+    font-size: 200%;
+}
+
+.sect1 p{
+    font-size: 1em;
+    color: white;
+}
+.Student{
+
+    width:100%;
+    height: 100%;
+    margin-right:5%;
+}
+.Tap{
+    width:50%;
+}
+.girl{
+    width: 45%;
+    height:80%;
+}
+
+.sect1{
+    height:700px;
+    background-color: rgb(22, 50, 91);
+    display:inline-block;
+    width:100%;
+    padding-left: 5%;
+    padding-right: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* page2 */
+.about{
+    height:700px;
+    background-color: rgb(147, 157, 229);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding:20px;
+    text-size-adjust: 60%;
+}
+
+.columns{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    gap: 80px;
+}
+
+.pics{
+    width:60%;
+    height:60%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* page3 */
+
+h3{
+    font-size: 200%;
+}
+.last-pic{
+    height: 50;
+    width: 70;
+    float: left;
+}
+.sect2{
+    height:700px;
+    background-color: white; 
+    display:inline-block; 
+    width:100%;
+    text-align: center;
+}
+
+.timeline{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+.timeline::after{
+    content:'';
+    position: absolute; 
+    width: 6px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+.contaniner::after{
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px; 
+    background-color: black; 
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}  
+
+.left{
+    left: 0;
+
+}
+
+.right{
+    left:50%;
+}
+
+.right::after{
+    left:-16px;
+}
+
+.content{
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .timeline::after{
+    left: 31px;
+    }
+}
+
+    left::after, .right::after{
+    left: 15px;
+
+    }
+
+    .right{
+    left: 0%;
+    }
+
+
+/* page4 */
+.sect3{
+    height:300px;
+    background-color: rgb(147, 157, 229);
+    display:inline-block;
+    width:100%;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* scroll js code */
+nav-fixed-top.scrolled{
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+ 
+}
+
+/* page5 */
+
+.footer{
+    background-color: rgb(22, 50, 91);
+    height: 350px;
+    width: 100%;
+    text-align: center;
+  
+}
+.img{
+    width: 130px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.footer ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: table;
+    margin: 0 auto;
+
+}
+
+
+.footer a{
+    padding: 20px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer-bar{
+    text-align: center;
+    color: white;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    width: 26px;
+    display:none;
+    padding-left: 500px;
+    }
+    
+#toggle{
+    display: none;
+}
+
+
+
+/* MEDIA QUERIES START */
+  @media screen and (max-width: 660px){
+    
+    label{
+        display: block;
+        cursor: pointer;
+        color: white;
+    }
+
+    .nav-bar ul{
+        text-align: left;
+        display: none;
+        width:100%;
+    }
+    .nav-bar a{
+        display:block;
+        margin: 0;
+        clear: right;
+        line-height: 70px;
+        color: grey;
+
+    }
+
+    #toggle:checked + .nav-bar{
+        display: block;
+    } 
+
+    .nav-bar img{
+        width: 15%;
+        height: 15%;
+    }
+    
+
+    .sect1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    } 
+
+    .sect1 .girl{
+        display: none;
+    }
+
+    .sect1 .Tap{
+        width: 100%;
+        height: 100%;
+        padding-top: 200px;
+        padding-bottom: 300px;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .sect1 h2{
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .sect1 p{
+        text-align: left;
+        padding-left: 2.5px;
+        padding-right: 20px;
+    }
+
+    .about{
+        
+        width: 100%;
+        height: 100%;
+    }
+
+    .about .columns{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+        flex-wrap: wrap;
+    }
+
+    .about .columns .column{
+        width: 100%;
+        height: 50%;
+    }
+
+
+
+    .last-pic{
+        width: 100%;
+        height: 40%;
+    }
+
+    .sect3{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .footer{
+        width: 100%;
+        height:100%;
+        
+    }
+
+    .footer-bar ul{
+        width: 80%;
+        text-align: center;
+    } 
+
+    .footer-bar{
+        text-align: center;
+    }
+}
+
+
+  
+/* MEDIA QUERIES END */
+
+
+
+
+
+
+
